@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배정고등학교 AI 스마트 분리수거 안내 시스템</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .scan-line {
+            height: 3px;
+            background: linear-gradient(90deg, rgba(34,197,94,0) 0%, rgba(34,197,94,1) 50%, rgba(34,197,94,0) 100%);
+            animation: scan 2s infinite ease-in-out;
+        }
+        @keyframes scan {
+            0% { top: 0%; opacity: 0.8; }
+            50% { top: 95%; opacity: 1; }
+            100% { top: 0%; opacity: 0.8; }
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased min-h-screen pb-20 md:pb-6">
+    <div class="max-w-md mx-auto min-h-screen bg-white shadow-xl relative flex flex-col border-x border-slate-100">
+        <header class="bg-gradient-to-r from-emerald-700 to-teal-700 text-white p-4 sticky top-0 z-30 shadow-md">
+            <div class="flex justify-between items-center mb-2">
+                <div class="flex items-center space-x-2">
+                    <span class="bg-white text-emerald-800 text-xs px-2 py-0.5 rounded-full font-bold">배정고등학교</span>
+                    <h1 class="text-base font-bold flex items-center">
+                        <i class="fa-solid fa-leaf text-amber-300 mr-1.5"></i>스마트 분리수거 AI
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 p-4 flex flex-col items-center justify-center text-center space-y-4">
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-recycle"></i>
+            </div>
+            <h2 class="text-lg font-bold text-slate-900">배정고 스마트 분리수거 시스템</h2>
+            <p class="text-xs text-slate-500">index.html 파일이 정상적으로 등록되었습니다!<br>교내 분리수거함 안내 시스템을 시작합니다.</p>
+        </main>
+    </div>
+</body>
+</html>
